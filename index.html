@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <title>A Vila Sombria</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.jpg" alt="">
+            <p>Já é noite quando você caminha pela estrada até a misteriosa Vila Sombria. As casas de pedra parecem abandonadas e escondem segredos intrigantes, a noite é silenciosa sendo ouvido apenas os cantos das cigarras, as luzes espalhadas pela pequena cidadezinha causam um ambiente temeroso. Depois de ouvir muitos boatos sobre essa vila, curioso como o gato que perdeu a vida, você decide averiguar os arredores.
+                Como todo bom investigador você precisa decidir como começar sua missão:</p>
+                <button class="btn-proximo" data-proximo="1">Ir direto para a taverna</button>
+                <button class="btn-proximo" data-proximo="2">Explorar as casas ao redor</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img class="cenario" src="cenario1.jpg" alt="">
+            <p>Você procura algo pelas casas ao redor e acaba encontrando uma taverna bastante interessante, 
+                as luzes estão ligadas, sinal de que está aberta.</p>
+                <button class="btn-proximo" data-proximo="1">Ir para a tarverna</button>
+                <button class="btn-proximo" data-proximo="6">Deixar pra lá</button>
+        </div>
+
+            <div class="passo" id="passo-1">
+            <img class="cenario" src="cenario1.jpg" alt=""> 
+                <p>Observando ao redor, podemos ver uma pequena taverna localizada há frente, suas luzes estão ligadas, dando indicios que ainda há movimento.
+                    Chegando na taverna decadente, onde encontra um ambiente acolhedor, as luzes alaranjadas trazem um conforto visual, há um balcão onde se localiza a taverneira que olha tudo ao redor enquanto limpa a louça recente sujada e atrás dela se estende um imenso armário abarrotado de bebidas e frascos.
+                    Dois homens mais ao fundo sentados em banquetas, aparentemente os únicos clientes naquele horário, um praticamente dormindo sobre a mesa, enquanto o outro te observa.</p>
+                    <button class="btn-proximo" data-proximo="3">Falar com o homem no canto</button>
+                    <button class="btn-proximo" data-proximo="4">Conversar com a taverneira</button>
+                </div>
+
+        <div class="passo" id="passo-4">
+            <img class="cenario" src="taverneira.jpg" alt=""> 
+                <p>Você se aproxima da mulher atrás do balcão com um sorriso amistoso, perguntando sobre os rumores de eventos estranhos na vila.
+                    A taverneira, surpresa, menciona pessoas desaparecendo e perigos inexplicáveis na floresta. Ela sugere falar com o velho Elías, um senhor que vive a muitos e muitos anos na vila, e dizem que ele já presenciou eventos muitos estranhos, uns dizem que ele é um louco, maluco virado.
+                    Ela também falou para visitar o antigo cemitério da vila para obter mais informações sobre o assunto, porém há de ter coragem, pois é perigoso, será que você é corajoso o suficiente?.</p>
+                    <button class="btn-proximo" data-proximo="5">Ir até a casa do velho Elías</button>
+                    <button class="btn-proximo" data-proximo="6">Deixar pra lá</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img class="cenario" src="Bêbado.jpg" alt="">
+            <p>Ele estava bebâdo demais e caiu de sono na mesa do bar.</p>
+                <button class="btn-proximo" data-proximo="4">Ir falar com a taverneira</button>
+                <button class="btn-proximo" data-proximo="6">Deixar pra lá</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img class="cenario" src="casinha(1).jpg" alt=""> 
+                <p>Você decidiu desistir de explorar as lendas antigas, voltou para sua casa.</p>
+                    <button class="btn-proximo" data-proximo="4">Anterior</button>
+                    <button class="btn-proximo" data-proximo="0">Voltar ao Ínicio</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+         <img class="cenario" src="velho.jpg" alt=""> 
+        <p>Seguindo a sugestão da taverneira e vai até a casa de Elías, percebendo sinais de abandono.
+            Ao bater na porta, um homem idoso a recebe, revelando um segredo sombrio da vila.Ele conta sobre um pacto feito com uma entidade obscura que exigia sacrifícios para trazer prosperidade, assombrando a vila.
+            Elías convida Clara para resolver o mistério e enfrentar a entidade ou liberar os espíritos aprisionados. Com o conhecimento do pacto sombrio e do que precisa ser feito o que você irá fazer?</p>
+         <button class="btn-proximo" data-proximo="7">Ir até o cemitério para procurar uma maneira de confrontar a entidade</button>
+          <button class="btn-proximo" data-proximo="8">Buscar uma forma de libertar os espíritos aprisionados</button> 
+</div>
+    
+<div class="passo" id="passo-7">
+    <img class="cenario" src="entidade.jpg" alt=""> 
+   <p>Você foi ao encontro da entidade e a deixou furiosa.
+    VOCÊ MORREU!</p>
+    <button class="btn-proximo" data-proximo="4"> Anterior</button>
+     <button class="btn-proximo" data-proximo="0"> Voltar ao Ínicio</button> 
+</div>
+        
+<div class="passo" id="passo-8">
+    <img class="cenario" src="cemiterio.png" alt=""> 
+   <p>Com as revelações de Elías, você decide priorizar a libertação dos espíritos aprisionados.
+    Agradecendo ao velho pelas informações, vai ao cemitério da vila, iluminada por uma lua pálida.Explorando o local, você encontra uma capela com um antigo livro de rituais para libertar almas aprisionadas.
+    Seguindo as instruções, realiza o ritual com precisão, liberando os espíritos e enfraquecendo a entidade obscura.
+    Com a vila retomando a serenidade, você se despede de Elías e parte, pronta para novos desafios e mistérios.
+    </p>
+    <button class="btn-proximo" data-proximo="9"> Fim</button>
+     <button class="btn-proximo" data-proximo="0"> Voltar ao Ínicio</button> 
+</div>
+
+<div class="passo" id="passo-9">
+    <img class="cenario" src="fim.jpg" alt=""> 
+   <p>PARABÉNS!!! Você conseguiu sobreviver a essa aventura, está pronto para a próxima? </p>
+     <button class="btn-proximo" data-proximo="0"> Voltar ao Ínicio</button> 
+</div>
+    </main>
+<script src="script.js"></script>
+
+</body>
+</html>

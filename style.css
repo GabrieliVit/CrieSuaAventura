@@ -1,0 +1,30 @@
+body{
+    background-color:rgb(82, 106, 88);
+    color: white;
+    font-family:  "Baskervville SC", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+button{
+    background-color: rgb(228, 204, 172);
+    color: black;
+    font-family:"Nerko One", cursive;
+}
+
+.passo{
+    display: none;
+}
+
+.passo.ativo{
+    display: block;
+}
+main {
+    text-align: center;
+    max-width: 70%;
+}
+.cenario{
+    height: 414px;
+}
